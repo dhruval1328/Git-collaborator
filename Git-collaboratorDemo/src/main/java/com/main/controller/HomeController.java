@@ -21,4 +21,9 @@ public class HomeController {
 		Product p1 = pi.savedata(p);
 		return p1;
 	}
+	
+	@GetMapping("/get")
+	public void retrive() {
+		pi.getdata();
+	}
 }

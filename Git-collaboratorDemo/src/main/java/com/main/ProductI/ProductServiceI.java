@@ -6,4 +6,6 @@ public interface ProductServiceI {
 
 	Product savedata(Product p);
 
+	void getdata();
+
 }
