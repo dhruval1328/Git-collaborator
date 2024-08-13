@@ -1,5 +1,7 @@
 package com.main.ProductImpl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,10 +20,22 @@ public class ProductServiceImpl implements ProductServiceI{
 		return pr.save(p);
 	}
 
-//	@Override
-//	public void getdata() {
-//		pr.findAll();
-//		
-//	}
+	@Override
+	public List<Product> getdata() {
+		return pr.findAll();
+	}
+
+	@Override
+	public void deldata(int id) {
+		pr.deleteById(id);
+		
+	}
+
+	@Override
+	public void updata(int id, String pro) {
+		pr.updateDataByName(id, pro);
+	}
+
+
 
 }
