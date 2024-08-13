@@ -18,10 +18,10 @@ public class ProductServiceImpl implements ProductServiceI{
 		return pr.save(p);
 	}
 
-	@Override
-	public void getdata() {
-		pr.findAll();
-		
-	}
+//	@Override
+//	public void getdata() {
+//		pr.findAll();
+//		
+//	}
 
 }

@@ -22,8 +22,4 @@ public class HomeController {
 		return p1;
 	}
 	
-	@GetMapping("/get")
-	public void retrive() {
-		pi.getdata();
-	}
 }
